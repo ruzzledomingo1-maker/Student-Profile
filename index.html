@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            color: #4B0082;
+            line-height: 1.6;
+        }
+
+        header {
+            background:#4B0082;
+            color: #E5E4E2;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            font-size: 21px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+        }
+
+        nav a:hover {
+            color: #f0c879;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #182b49, #4B0082);
+            color: white;
+            padding: 75px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 35px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin: 12px 0;
+        }
+
+        .hero p {
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            border: 5px solid white;
+            background: #e6eaf0;
+            color: #182b49;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 55px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 11px 20px;
+            background: #f0c879;
+            color: #4B0082;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        section.content {
+            margin-bottom: 35px;
+            scroll-margin-top: 20px;
+        }
+
+        section h2 {
+            color: #182b49;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #f0c879;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #182b4910;
+        }
+
+        .card h3 {
+            color: #416b9e;
+            margin-bottom: 8px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background: #e6edf7;
+            color: #243e63;
+            padding: 8px 14px;
+            border-radius: 20px;
+        }
+
+        footer {
+            background: #182b49;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding: 45px 20px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Student Profile</h2>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#goals">Goals</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div>
+            <p>WELCOME MGA BUSENG</p>
+            <h1>RUZZLE JOHN DOMINGO</h1>
+            <p>
+                Bachelor of Science in Information Technology
+                student at Nueva Vizcaya State University, Bayombong Campus.
+            </p>
+            <a href="#about" class="btn">Learn More About Me</a>
+        </div>
+
+        <div class="profile-pic">
+        <img src="./profile.jpg.jpg" alt="Student Photo" class="profile-pic"> </div>
+
+    </div>
+
+    <main>
+
+        <section class="content" id="about">
+            <h2>About Me</h2>
+            <div class="card">
+                <p>
+                   I am an aspiring Information Technology Student passionate about technology, learning, and problem solving. I aim to develop my sills
+                    and gain expirience to build a successfull career in IT industry.
+                </p>
+            </div>
+        </section>
+
+        <section class="content" id="education">
+            <h2>Educational Background</h2>
+
+            <div class="card">
+                <h3>Nueva Vizcaya State University</h3>
+                <p>Bachelor of Science in Information Technology</p>
+            </div>
+
+            <div class="card">
+                <h3>Bascaran National High School</h3>
+                <p>Senior High School - GAS (General Academic Strand)</p>
+                <p>Graduated: 2023</p>
+            </div>
+
+            <div class="card">
+                <h3>Bascaran National High School</h3>
+                <p>Junior High School</p>
+                <p>Graduated: 2021</p>
+            </div>
+
+            <div class="card">
+                <h3>Bascaran Elementary School</h3>
+                <p>Elementary Education</p>
+                <p>Graduated: 2015</p>
+            </div>
+        </section>
+
+        <section class="content" id="skills">
+            <h2>My Skills</h2>
+            <div class="card">
+                <div class="skills">
+                    <span>Basic troubleshooting</span>
+                    <span>Creativity</span>
+                    <span>Teamwork</span>
+                    <span>Web development</span>
+                    <span>Data Analysiss</span>
+                    <span>Programming and coding</span>
+                    <span>Problem Solving</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="content" id="goals">
+            <h2>Hobbies and Career Goals</h2>
+            <div class="card">
+                <h3>My Hobbies</h3>
+                <p>I enjoy drawing, playing games, Coding and many more.</p>
+
+                <h3 style="margin-top: 20px;">My Career Goal</h3>
+                <p>
+                    To obtain a position in the field of Information Technology where I can apply my technical skills, 
+                    enhance my knowledge of computer systems and software development, and gain valuable work experience. 
+                    I aim to contribute to the success of the company while continuously improving my skills 
+                    and growing professionally as an IT professional.
+                </p>
+            </div>
+        </section>
+
+        <section class="content" id="contact">
+            <h2>Contact Me</h2>
+            <div class="card">
+                <p>Email: ruzzledomingo1@gmail.com</p>
+                <p>Location: Bascaran, Solano, Nueva Vizcaya</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span>Ruzzle John C. Domingo</p>
+        <p>Student Profile Website</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
